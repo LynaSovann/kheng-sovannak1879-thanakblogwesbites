@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kheng-sovannak1879-thanakblogwesbites-deployment
+  labels:
+    app: kheng-sovannak1879-thanakblogwesbites
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kheng-sovannak1879-thanakblogwesbites
+  template:
+    metadata:
+      labels:
+        app: kheng-sovannak1879-thanakblogwesbites
+    spec:
+      containers:
+        - name: kheng-sovannak1879-thanakblogwesbites-container
+          image: pipejet/kheng-sovannak1879-thanakblogwesbites:0
+          ports:
+            - containerPort: 5173
