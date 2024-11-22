@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: kheng-sovannak1879-thanakblogwesbites-certificate
+  namespace: kheng-sovannak1879-thanakblogwesbites
+spec:
+  secretName: kheng-sovannak1879-thanakblogwesbites-secret-tls
+  commonName: kheng-sovannak1879-thanakblogwesbites.assessify.org
+  dnsNames:
+  - kheng-sovannak1879-thanakblogwesbites.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
