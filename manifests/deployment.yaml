@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: kheng-sovannak1879-thanakblogwesbites-container
-          image: pipejet/kheng-sovannak1879-thanakblogwesbites:3
+          image: pipejet/kheng-sovannak1879-thanakblogwesbites:4
           ports:
             - containerPort: 5173
